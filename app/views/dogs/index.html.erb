@@ -1,0 +1,14 @@
+<h1>Dogs</h1>
+
+<h5>Search by Number of Owners:</h5>
+    <%= form_tag(dogs_path, method: :get) do %>
+        <%= text_field_tag(:search, params[:search]) %>
+        <%= submit_tag("Search") %>
+    <% end %>
+
+
+<ol>
+    <% @dogs.each do |dog| %>
+        <li><%= link_to dog.name, dog_path(dog.id) %></li>
+    <% end %>
+</ol>
