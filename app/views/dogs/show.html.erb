@@ -1,0 +1,10 @@
+<h1><%= @dog.name.titleize %></h1>
+
+<p>Breed: <%= @dog.breed %></p>
+<p>Age: <%= @dog.age %></p>
+
+<h3>Dunder Mifflin Employee(s)</h3>
+
+<% @dog.employees.each do |x|%>
+    <p><%= x.full_name %><p>
+<% end %>

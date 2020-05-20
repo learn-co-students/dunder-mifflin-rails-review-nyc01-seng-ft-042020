@@ -1,0 +1,9 @@
+<%if flash[:errors]%>
+<% flash[:errors].each do |x| %>
+<%= x %>
+<%end%>
+<%end%>
+
+<h1>Edit Employee</h1>
+
+<%= render 'form' %>
