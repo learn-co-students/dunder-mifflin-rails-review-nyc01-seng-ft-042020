@@ -1,5 +1,12 @@
 <h1>Employee</h1>
 
+<% if flash[:success] %>
+<%= flash[:success] %>
+<% end %>
+
+<br>
+<br>
+
 First Name: <%= @employee.first_name %><br>
 Last Name: <%= @employee.last_name %><br>
 Alias: <%= @employee.alias %><br>
