@@ -1,0 +1,13 @@
+<h1><%= @employee.first_name %>'s Page</h1>
+
+<img src="<%=@employee.img_url%>">
+
+<h2>Stats</h2>
+<ul>
+<li>First Name: <%= @employee.first_name %></li>
+<li>Last Name: <%= @employee.last_name %></li>
+<li>Alias: <%= @employee.alias %></li>
+<li>Title: <%= @employee.title %></li>
+<li>Office: <%= @employee.office %></li>
+<li>Dog Name:<%= @employee.dog.name %></li>
+</ul>
